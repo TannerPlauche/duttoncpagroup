@@ -30,7 +30,9 @@
       "Bash(__NEW_LINE__ cp -f duttoncavanaughpracticesareas.html practiceareas.html)",
       "Bash(__NEW_LINE__ cp -f duttoncavanaughcontact.html contact.html)",
       "Bash(__NEW_LINE__ echo \"✓ Replaced service page files with correct content\")",
-      "Bash(__NEW_LINE__ echo \"Taxes page - checking which content is which:\")"
+      "Bash(__NEW_LINE__ echo \"Taxes page - checking which content is which:\")",
+      "Bash(cd /Users/tannerplauche/source/duttoncavanaugh/public echo \"Checking for remaining absolute links:\" grep -c \"https://www.duttoncavanaugh.com\" *.html)",
+      "Bash(head -5 echo \"\" echo \"Total files still with absolute links:\" grep -l \"https://www.duttoncavanaugh.com\" *.html)"
     ]
   }
 }
