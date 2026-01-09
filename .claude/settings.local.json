@@ -29,7 +29,8 @@
       "Bash(__NEW_LINE__ cp -f duttoncavanaughabout.html griffin_accounting-about.html)",
       "Bash(__NEW_LINE__ cp -f duttoncavanaughpracticesareas.html practiceareas.html)",
       "Bash(__NEW_LINE__ cp -f duttoncavanaughcontact.html contact.html)",
-      "Bash(__NEW_LINE__ echo \"✓ Replaced service page files with correct content\")"
+      "Bash(__NEW_LINE__ echo \"✓ Replaced service page files with correct content\")",
+      "Bash(__NEW_LINE__ echo \"Taxes page - checking which content is which:\")"
     ]
   }
 }
