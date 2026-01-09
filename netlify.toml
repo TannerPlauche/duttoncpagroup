@@ -1,0 +1,62 @@
+# Netlify configuration file
+
+[build]
+  # Directory with the static files to publish
+  publish = "public"
+
+  # Build command (if needed)
+  # command = "npm run build"
+
+[functions]
+  # Directory where your serverless functions are located
+  directory = "netlify/functions"
+  # Keep express as an external module (don't bundle it)
+  external_node_modules = ["express"]
+  # Use esbuild for faster bundling
+  node_bundler = "esbuild"
+
+# Redirect rules
+[[redirects]]
+  # Redirect /api/* to Netlify function
+  force = true
+  from = "/api/*"
+  status = 200
+  to = "/.netlify/functions/api/:splat"
+
+[[redirects]]
+  # Redirect all other requests to index.html for client-side routing
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+
