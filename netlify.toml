@@ -10,8 +10,8 @@
 [functions]
   # Directory where your serverless functions are located
   directory = "netlify/functions"
-  # Keep express as an external module (don't bundle it)
-  external_node_modules = ["express"]
+  # Keep express and serverless-http as external modules (don't bundle them)
+  external_node_modules = ["express", "serverless-http"]
   # Use esbuild for faster bundling
   node_bundler = "esbuild"
 
