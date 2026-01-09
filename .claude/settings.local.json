@@ -18,7 +18,8 @@
       "Bash(ls:*)",
       "Bash(grep:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Dutton Cavanaugh website local setup\n\n- Set up Express server to serve static website files\n- Downloaded and configured all website pages from duttoncavanaugh.com\n- Fixed relative paths to absolute paths for nested pages\n- Replaced Mapbox map with Google Maps embed on contact page\n- Updated company address from 409 Airport Rd to 124 N Hill St, Griffin, GA 30223\n- Configured proper URL routing for all service pages\n- Added scraping scripts \\(Python and Node.js\\) for future updates\n- All pages tested and working locally\n\nPages included:\n- Home page\n- Contact page with Google Maps\n- About page\n- Bookkeeping services\n- Business services\n- Tax planning\n- Taxes page\n- Practice areas\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }
