@@ -1,0 +1,42 @@
+Pages to Download from Dutton Cavanaugh Website
+================================================
+
+Please visit each URL below in your browser and save them (Cmd+S / Ctrl+S):
+- Select "Webpage, HTML Only" format
+- Save each file with the suggested filename in the public/ directory
+
+Main Pages:
+-----------
+1. https://www.duttoncavanaugh.com/contact
+   → Save as: public/contact.html
+
+2. https://www.duttoncavanaugh.com/griffin_accounting/about
+   → Save as: public/griffin_accounting-about.html
+
+3. https://www.duttoncavanaugh.com/griffin/bookkeeping
+   → Save as: public/griffin-bookkeeping.html
+
+4. https://www.duttoncavanaugh.com/griffin/business-services
+   → Save as: public/griffin-business-services.html
+
+5. https://www.duttoncavanaugh.com/griffin/tax-planning
+   → Save as: public/griffin-tax-planning.html
+
+6. https://www.duttoncavanaugh.com/griffin/taxes
+   → Save as: public/griffin-taxes.html
+
+7. https://www.duttoncavanaugh.com/News
+   → Save as: public/News.html
+
+8. https://www.duttoncavanaugh.com/practiceareas
+   → Save as: public/practiceareas.html
+
+9. https://www.duttoncavanaugh.com/services
+   → Save as: public/services.html
+
+
+Note: The assets (CSS, JS, images) are already in the public folder,
+so you only need to save the HTML files.
+
+After saving these pages, your Express server will serve them automatically!
+Visit http://localhost:3000 to test.
