@@ -2,6 +2,80 @@
 <!-- saved from url=(0039)/contact -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="pointer skrollr skrollr-desktop"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style id="customRules"></style>
+    <style id="successModalStyles">
+      .success-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 99999;
+        justify-content: center;
+        align-items: center;
+      }
+      .success-modal-overlay.active {
+        display: flex;
+      }
+      .success-modal {
+        background: #fff;
+        border-radius: 12px;
+        padding: 40px 36px;
+        max-width: 480px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        animation: modalSlideIn 0.3s ease-out;
+      }
+      @keyframes modalSlideIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .success-modal .modal-icon {
+        width: 64px;
+        height: 64px;
+        background: #4CAF50;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+      }
+      .success-modal .modal-icon svg {
+        width: 32px;
+        height: 32px;
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .success-modal h3 {
+        margin: 0 0 12px;
+        font-size: 24px;
+        color: #333;
+      }
+      .success-modal p {
+        margin: 0 0 24px;
+        font-size: 16px;
+        color: #666;
+        line-height: 1.5;
+      }
+      .success-modal .modal-close-btn {
+        background: #333;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 32px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .success-modal .modal-close-btn:hover {
+        background: #555;
+      }
+    </style>
     
 
 
@@ -750,22 +824,92 @@
 </div> 
  <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1102835677 dmRespRow dmSectionParallaxNew hasBackgroundOverlay skrollable skrollable-before" style="text-align: center; background-position: 50% 0px;" id="1102835677" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 0px;"> <div class="dmRespColsWrapper" id="1109173268"> <div class="u_1492008817 dmRespCol small-12 medium-12 large-12" id="1492008817"> <h2 class="u_1334038829 dmNewParagraph" id="1334038829" style="" data-element-type="paragraph"><div style="text-align: center;">Free Evaluation</div></h2> <div class="u_1729400812 dmDividerWrapper clearfix" id="1729400812" layout="divider-style-1" data-element-type="dDividerId"><hr class="dmDivider" style="min-height: 2px; border:none; background:grey" id="1017196993"></div> 
  <h5 class="u_1524788754 dmNewParagraph" id="1524788754" data-element-type="paragraph"><div style="font-family:inherit;text-align:center;"><font color="#3c3e47"><span style="font-weight: 300;">Sound financial advice is based on years of training, hard work, and passion, as well as familiarity with laws, standards, and sound consideration. You’ll find all that and more.&nbsp;</span></font></div></h5> <div class="u_1251441386 dmform default native-inputs" id="1251441386" data-layout="layout-4" data-element-type="dContactUsRespId"> <h3 class="dmform-title dmwidget-title" id="1169913399">Contact Dutton CPA Group</h3> 
- <div class="dmform-wrapper" id="1358205902" captcha-lang="en"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1040849708"> <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1516782077"> <label for="1769161175" id="1819698524" data-dm-for="dmform-0"></label> 
-<input type="text" class="" name="dmform-0" id="1769161175" placeholder="First Name" data-placeholder-original="First Name"><input type="hidden" name="label-dmform-0" id="1329928811" class=""></div> 
- <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1950234684"> <label for="1313731096" id="1694006039" data-dm-for="dmform-1"></label> 
-<input type="text" name="dmform-1" placeholder="Last Name" id="1313731096" class="" data-placeholder-original="Last Name"><input type="hidden" name="label-dmform-1" id="1834875691" class=""></div> 
- <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1405789226"> <label for="1970937722" id="1823774141" data-dm-for="dmform-2"></label> 
-<input type="tel" class="" name="dmform-2" id="1970937722" placeholder="Phone" data-placeholder-original="Phone"><input type="hidden" name="label-dmform-2" id="1316961645" class=""></div> 
- <div class="dmforminput small-12 dmRespDesignCol medium-6 large-6" id="1547599130"> <label for="1853964912" id="1480792169" data-dm-for="dmform-5"></label> 
-<input type="email" name="dmform-5" placeholder="Email" id="1853964912" class="" data-placeholder-original="Email"><input type="hidden" name="label-dmform-5" id="1141862710" class=""></div> 
- <div class="dmforminput large-12 medium-12 dmRespDesignCol small-12" id="1325725782"> <label for="1220739256" id="1018694168" data-dm-for="dmform-3"></label> 
- <textarea name="dmform-3" id="1220739256" class="" placeholder="Message" data-placeholder-original="Message"></textarea> 
-<input type="hidden" name="label-dmform-3" id="1327103965" class=""></div> 
- <span id="1028713084" class="dmWidgetClear"></span> 
- <div class="dmformsubmit dmWidget R" id="1144498594"><input class="" name="submit" type="submit" value="SUBMIT" id="1764241335"></div> 
-<input name="dmformsendto" type="hidden" id="1078977250" class="" value="O0wrseIfFLs00MTxfTl6mllHZs2+H7WF//Uh9Kx1sTkzF0YEPQA32Y3hS0uSlAtpKEwgN3myvAQRCaXW7H8UqwMQkJKWsy8EcjEvAE+lsFvZlpjuz5UWIQ==" data-dec="true"><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1194625447"><input name="dmformfrom" type="hidden" value="" id="1181377927"><input name="dmformsubject" type="hidden" value="Form Message" id="1273943423" class=""><input name="dmformsubmitparams" type="hidden" value="8mpKnCSiNQXK/d9M7IDrS0QuBgxs8lvvRX0uYk0MqGC5qIzVaeEyl0sHjiuQuvJJjzZ2yd8v8kNyXwq3Fk0GA3ty1mo6fr9NE1UB7Gx8A1muGlTalhYUFzVHZQziAq5frz90/AiWb35ANG0Or/4E3etB6RwsgUI0XzbXXkFBDQ05ZDVOkzmtv258uVwq0EGRbxMDCzFZxTwRwmsS/768kzh5pml5l1Tz5Ner1oefi3TFbjcPvOFGPXDEW8QghFfB/9omfnF4wi4ITY/ozVzSDw==" data-dec="true"><input type="hidden" name="page_uuid" value="221c915bee144dfc814b15fbe422d12e"></form> 
-</div> 
- <div class="dmform-success" style="display:none" id="1710478744" data-success-page="home"><p class="rteBlock">Thank you for contacting Dutton and Cavanaugh!</p><p class="rteBlock">We will get back to you as soon as possible</p></div> <div class="dmform-error" style="display:none" id="1926700593">Oops, there was an error sending your message.<br id="1360556738">Please try again later</div> 
+ <div class="dmform-wrapper" id="1358205902" captcha-lang="en"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="contactForm"> <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1516782077"> <label for="firstName" id="1819698524"></label>
+<input type="text" class="" name="firstName" id="firstName" placeholder="First Name" required></div>
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1950234684"> <label for="lastName" id="1694006039"></label>
+<input type="text" name="lastName" placeholder="Last Name" id="lastName" class="" required></div>
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1405789226"> <label for="phone" id="1823774141"></label>
+<input type="tel" class="" name="phone" id="phone" placeholder="Phone" required></div>
+ <div class="dmforminput small-12 dmRespDesignCol medium-6 large-6" id="1547599130"> <label for="email" id="1480792169"></label>
+<input type="email" name="email" placeholder="Email" id="email" class=""></div>
+ <div class="dmforminput large-12 medium-12 dmRespDesignCol small-12" id="1325725782"> <label for="message" id="1018694168"></label>
+ <textarea name="message" id="message" class="" placeholder="Message"></textarea></div>
+ <span id="1028713084" class="dmWidgetClear"></span>
+ <div class="dmformsubmit dmWidget R" id="1144498594"><input class="" name="submit" type="submit" value="SUBMIT" id="1764241335"></div></form>
+</div>
+ <div class="dmform-success" style="display:none" id="1710478744" data-success-page="home"><p class="rteBlock">Thank you for contacting Dutton CPA Group!</p><p class="rteBlock">We will get back to you as soon as possible</p></div> <div class="dmform-error" style="display:none" id="1926700593">Oops, there was an error sending your message.<br id="1360556738">Please try again later</div>
+<div class="success-modal-overlay" id="successModal">
+  <div class="success-modal">
+    <div class="modal-icon">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <h3>Message Sent!</h3>
+    <p>Thank you for contacting Dutton CPA Group! We will get back to you as soon as possible.</p>
+    <button class="modal-close-btn" id="modalCloseBtn">OK</button>
+  </div>
+</div>
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const submitBtn = form.querySelector('input[type="submit"]');
+  const successDiv = document.getElementById('1710478744');
+  const errorDiv = document.getElementById('1926700593');
+
+  // Hide any previous messages
+  successDiv.style.display = 'none';
+  errorDiv.style.display = 'none';
+
+  // Disable submit button
+  submitBtn.disabled = true;
+  submitBtn.value = 'SENDING...';
+
+  try {
+    const formData = {
+      firstName: document.getElementById('firstName').value,
+      lastName: document.getElementById('lastName').value,
+      phone: document.getElementById('phone').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value
+    };
+
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      form.reset();
+      document.getElementById('successModal').classList.add('active');
+    } else {
+      errorDiv.innerHTML = result.message || 'Oops, there was an error sending your message.<br>Please try again later';
+      errorDiv.style.display = 'block';
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    errorDiv.style.display = 'block';
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.value = 'SUBMIT';
+  }
+});
+
+// Close modal handlers
+document.getElementById('modalCloseBtn').addEventListener('click', function() {
+  document.getElementById('successModal').classList.remove('active');
+});
+document.getElementById('successModal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    this.classList.remove('active');
+  }
+});
+</script> 
 </div> 
 </div> 
 </div> 
