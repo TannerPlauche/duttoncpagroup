@@ -9,7 +9,7 @@ const api = express();
 api.use(express.urlencoded({ extended: true }));
 api.use(express.json());
 
-const router = Router();
+const router = express.Router();
 
 router.get("/hello", (req: Request, res: Response) => res.send("Hello World!"));
 
