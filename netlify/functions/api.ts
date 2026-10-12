@@ -26,6 +26,14 @@ router.post("/contact", async (req: Request, res: Response) => {
       });
     }
 
+    // Spam filter: bots tend to submit a single random string with no spaces as the message.
+    // Return a normal success response so they can't tell they were filtered, but skip the email.
+    const trimmedMessage = typeof message === 'string' ? message.trim() : '';
+    if (trimmedMessage && !/\s/.test(trimmedMessage)) {
+      console.log('Discarding likely spam contact submission:', { firstName, lastName, email, message });
+      return res.json({ success: true, message: 'Thank you! Your message has been sent successfully.' });
+    }
+
     // Create nodemailer transporter
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
